@@ -1,0 +1,26 @@
+.page-header {
+  margin-left: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+#ticket-table {
+  width: 90%;
+}
+
+.glyphicon-user {
+  font-size: 7em;
+  margin: 10px;
+}
+
+.action, .add-action {
+  border: solid;
+  border-width: thin;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 100%;
+}

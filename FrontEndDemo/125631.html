@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="page-header">
+        <a href="index.html"><h1>Sarlacc</a> <small class="subtitle">A new definition of pain and suffering...</small></h1>
+      </div>
+    </header>
+
+    <!-- Ticket Header Content -->
+    <div class="container">
+      <!-- Ticket Details -->
+      <div class="row ticket-heading">
+        <!-- User and Creation -->
+        <div class="col-sm-4">
+          <div class="col-sm-6">
+            <span class="glyphicon glyphicon-user"></span>
+          </div>
+          <div class="col-sm-6"><p>wbolger</p>
+            <p>Created: 10:23 am PDT, July 10, 2015</p>
+            <p>Closed: --</p>
+          </div>
+        </div>
+        <!-- Issue Details -->
+        <div class="col-sm-8">
+          <!-- Issue and Description -->
+          <div class="row">
+            <div class="col-sm-12">
+              <p>Issue: Can't log into AcquiSuite</p>
+              <p>Description:</p>
+              <p>A8810 stopped reporting data on 7/1. Tech arrived at site but cannot log into device.</p>
+            </div>
+          </div>
+          <!-- Issue Contact -->
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Customer: Also Energy</p>
+              <p>Contact Name: Boba Fett</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Contact Phone: 123-456-7890</p>
+              <p>Contact Email: bfett@alsoenergy.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Content -->
+    <div class="container">
+      <!-- Action Row: Each 'Action' is a row -->
+      <div class="row action">
+        <!-- User and Time Info -->
+        <div class="col-sm-4">
+          <div class="col-sm-6">
+            <span class="glyphicon glyphicon-user"></span>
+          </div>
+          <div class="col-sm-6">
+            <p>wbolger</p>
+            <p>Action Started: 10:23 am PDT, July 10, 2015</p>
+            <p>Action Stopped: 10:32 am PDT, July 10, 2015</p>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <p>Client called in because they lost contact with device.  Tech could not get into device when they visited.</p>
+          <p>Asked client if they had username and password.  Customer said they would need to find it.</p>
+          <p>Customer could not confirm if tech was on right IP address. Advised customer to revisit site and call when onsite.</p>
+          <p>Will wait for customer to respond</p>
+        </div>
+      </div>
+      <!-- Action Row: Each 'Action' is a row -->
+      <div class="row action">
+        <!-- User and Time Info -->
+        <div class="col-sm-4">
+          <div class="col-sm-6">
+            <span class="glyphicon glyphicon-user"></span>
+          </div>
+          <div class="col-sm-6">
+            <p>tgintz</p>
+            <p>Action Started: 2:25 pm PDT, July 12, 2015</p>
+            <p>Action Stopped: 2:45 pm PDT, July 10, 2015</p>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <p>Client called in with admin and password (admin, deck4321) asking what to do with it.</p>
+          <p>AcquiSuite is not remotely accessible.  Told client to visit site and instructed them how to log in.</p>
+          <p>Told customer they could call back when onsite if they need help</p>
+          <p>Will wait for customer to respond</p>
+        </div>
+      </div>
+      <!-- Action Row: Each 'Action' is a row -->
+      <div class="row new-action">
+        <!-- <form class="form-inline" action="#" method="POST"> -->
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label class="" for="user">User</label>
+            <input type="text" name="user" id="user">
+            <label for="creationTime">Creation Time</label>
+            <input type="text" name="creationTime" id="creationTime">
+            <label for="stopTime">Stop Time</label>
+            <input type="text" name="stopTime" id="stopTime">
+          </div>
+          <div class="form-group">
+            <label for="ticketDetails">Ticket Details</label>
+            <!-- <input type="textarea" name="ticketDetails" id="ticketDetails"> -->
+            <textarea name="ticketDetails" id="ticketDetails" class="Form-control"></textarea>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <!-- New Action -->
+      <!-- <div class="row add-action"> -->
+        <!-- <div class="col-sm-4"> -->
+          <!-- User Info -->
+          <!-- <div class="col-sm-6"> -->
+            <!-- <span class="glyphicon glyphicon-user"></span> -->
+          <!-- </div> -->
+          <!-- <div class="col-sm-6"> -->
+            <!-- <form class="form-horizontal"> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label class="col-sm-2 control-label">User</label> -->
+                <!-- <div class="col-sm-10"> -->
+                  <!-- <p class="form-control-static">wbolger</p> -->
+                <!-- </div> -->
+              <!-- </div> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label for="creationTime" class="col-sm-2 control-label">Creation Time</label> -->
+                <!-- <div class="col-sm-10"> -->
+                  <!-- <input type="text" class="form-control" id="creationTime" placeholder="Creation Time"> -->
+                <!-- </div> -->
+              <!-- </div> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label for="stopTime" class="col-sm-2 control-label">Stop Time</label> -->
+                <!-- <div class="col-sm-10"> -->
+                  <!-- <input type="text" class="form-control" id="stopTime" placeholder="Stop Time"> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </form> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- Action Details -->
+        <!-- <div class="col-sm-8"> -->
+          <!-- <form></form> -->
+        <!-- </div> -->
+      <!-- </div> -->
+
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="container">
+      <div class="row">
+        <!-- Add Action Button -->
+        <div class="col-sm-4">
+          <button class="btn btn-success">Add Action</button>
+        </div>
+        <!-- Mark Closed/Reopen -->
+        <div class="col-sm-4 col-sm-offset-4">
+          <button class="btn btn-danger">Close Issue</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
