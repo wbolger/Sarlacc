@@ -99,13 +99,29 @@
           <p>Will wait for customer to respond</p>
         </div>
       </div>
-      <!-- Action Row: Each 'Action' is a row -->
-      <div class="row new-action">
-        <!-- <form class="form-inline" action="#" method="POST"> -->
+
+      <!-- Action Buttons -->
+      <div class="container">
+        <div class="row">
+          <!-- Add Action Button -->
+          <div class="col-sm-4">
+            <button class="btn btn-success" bype="button" data-toggle="collapse" data-target="#new-action">Add Action</button>
+          </div>
+          <!-- Mark Closed/Reopen -->
+          <div class="col-sm-4 col-sm-offset-4">
+            <button class="btn btn-danger">Close Issue</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Action collapsable form-->
+      <div class="collapse" id="new-action">
         <form action="#" method="POST">
           <div class="form-group">
+            <!-- Should default to current user -->
             <label class="" for="user">User</label>
             <input type="text" name="user" id="user">
+            <!-- Will default to current time but should allow user to change -->
             <label for="creationTime">Creation Time</label>
             <input type="text" name="creationTime" id="creationTime">
             <label for="stopTime">Stop Time</label>
@@ -116,63 +132,18 @@
             <!-- <input type="textarea" name="ticketDetails" id="ticketDetails"> -->
             <textarea name="ticketDetails" id="ticketDetails" class="Form-control"></textarea>
           </div>
-          <input type="submit" value="Submit">
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-link">Cancel</button>
+          </div>
         </form>
       </div>
-
-      <!-- New Action -->
-      <!-- <div class="row add-action"> -->
-        <!-- <div class="col-sm-4"> -->
-          <!-- User Info -->
-          <!-- <div class="col-sm-6"> -->
-            <!-- <span class="glyphicon glyphicon-user"></span> -->
-          <!-- </div> -->
-          <!-- <div class="col-sm-6"> -->
-            <!-- <form class="form-horizontal"> -->
-              <!-- <div class="form-group"> -->
-                <!-- <label class="col-sm-2 control-label">User</label> -->
-                <!-- <div class="col-sm-10"> -->
-                  <!-- <p class="form-control-static">wbolger</p> -->
-                <!-- </div> -->
-              <!-- </div> -->
-              <!-- <div class="form-group"> -->
-                <!-- <label for="creationTime" class="col-sm-2 control-label">Creation Time</label> -->
-                <!-- <div class="col-sm-10"> -->
-                  <!-- <input type="text" class="form-control" id="creationTime" placeholder="Creation Time"> -->
-                <!-- </div> -->
-              <!-- </div> -->
-              <!-- <div class="form-group"> -->
-                <!-- <label for="stopTime" class="col-sm-2 control-label">Stop Time</label> -->
-                <!-- <div class="col-sm-10"> -->
-                  <!-- <input type="text" class="form-control" id="stopTime" placeholder="Stop Time"> -->
-                <!-- </div> -->
-              <!-- </div> -->
-            <!-- </form> -->
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- Action Details -->
-        <!-- <div class="col-sm-8"> -->
-          <!-- <form></form> -->
-        <!-- </div> -->
-      <!-- </div> -->
-
     </div>
 
-    <!-- Action Buttons -->
-    <div class="container">
-      <div class="row">
-        <!-- Add Action Button -->
-        <div class="col-sm-4">
-          <button class="btn btn-success">Add Action</button>
-        </div>
-        <!-- Mark Closed/Reopen -->
-        <div class="col-sm-4 col-sm-offset-4">
-          <button class="btn btn-danger">Close Issue</button>
-        </div>
-      </div>
-    </div>
+
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-scripts.js"></script>
   </body>
 </html>
