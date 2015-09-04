@@ -81,9 +81,8 @@
 
     <!-- "New Ticket" modal -->
     <!-- <div class="modal fade" id="new-ticket" tabindex="-1"> -->
-    <div class="modal fade" id="new-ticket">
-      <!-- <div class="modal-dialogue" role="document"> -->
-      <div class="modal-dialogue">
+    <div class="modal fade" id="new-ticket" tabindex="-1" role="dialog" aria-labelledby="new-ticket">
+      <div class="modal-dialogue" role>
         <div class="modal-content">
           <div class="modal-header">
             <div class="modal-title">New Ticket</div>
@@ -91,19 +90,38 @@
           <div class="modal-body">
             <form action="#" method="POST">
               <div class="form-group">
-                <!-- Should default to current user -->
-                <label class="" for="user">User</label>
-                <input type="text" name="user" id="user">
-                <!-- Will default to current time but should allow user to change -->
-                <label for="creationTime">Creation Time</label>
-                <input type="text" name="creationTime" id="creationTime">
-                <label for="stopTime">Stop Time</label>
-                <input type="text" name="stopTime" id="stopTime">
+                <label for="inquirery-type">Inquirery Type</label>
+                <select name="inquirery-type" id="inquirery-type">
+                  <option value="phone">Phone</option>
+                  <option value="email">Email</option>
+                </select>
               </div>
+              <fieldset>
+                <legend>Inquirer Information</legend>
+                <div class="form-group">
+                  <label for="inquirer-first-name">Inquirer First Name</label>
+                  <input type="text" name="inquirer-first-name" id="inquirer-first-name">
+                </div>
+                <div class="form-group">
+                  <label for="inquirer-last-name">Inquirer Last Name</label>
+                  <input type="text" name="inquirer-last-name" id="inquirer-last-name">
+                </div>
+                <div class="form-group">
+                  <label for="organization">Organization</label>
+                  <input type="text" name="organization" id="organization">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" name="phone" id="phone">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email">
+                </div>
+              </fieldset>
               <div class="form-group">
                 <label for="ticketDetails">Ticket Details</label>
-                <!-- <input type="textarea" name="ticketDetails" id="ticketDetails"> -->
-                <textarea name="ticketDetails" id="ticketDetails" class="Form-control"></textarea>
+                <textarea name="ticketDetails" id="ticketDetails" class="Form-control" rows="3"></textarea>
               </div>
             </form>
           </div>
